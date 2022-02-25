@@ -1,0 +1,40 @@
+This API is written in JavaScript. Here are some useful information
+about installing dependencies, running and testing API.
+
+****Dependencies required to run the API****
+a) install node and npm
+
+Problem 1
+Create an API which allows applications to find breweries by state or by
+type.
+
+How to run problem 1:
+npm install
+npm start
+
+I have implemented two endpoints in this API to find the breweries by state or by type.
+You can run the API and go to browser or other tools like Postman to test the endpoints.
+For simplicity I keep the endpoints same as Open Brewery DB. Here are the endpoints:
+a) http://localhost:3000/api.openbrewerydb.org/breweries
+b) http://localhost:3000/api.openbrewerydb.org/breweries?by_state=new%20mexico
+c) http://localhost:3000/api.openbrewerydb.org/breweries?by_type=micro
+d) http://localhost:3000/api.openbrewerydb.org/breweries?by_type=micro&by_state=new_york
+
+I only have implemented two endpoints, but it will be fairly simple process to cover other
+endpoints as well.
+
+Assumptions made during solving the problem:
+
+I am using JSON files that acts like a real database here. I didn't create an in memory database to
+keep things simple. I also dropped the idea of creating cloud database since main focus is to
+demonstrate the thought process.
+
+Problem 2
+Using the data model provided by Open Brewery DB, write a mock SQL
+query finding all microbreweries in Canada. You can assume that brewery
+data is stored in a table called “breweries”.
+
+***Please don't run thing file***
+
+Since I have assumed that the database already exist and a stable connection is established, I
+only wrote a mock SQL query. Please see file called sql.js to see the implementation part.
